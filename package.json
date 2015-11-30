@@ -1,0 +1,22 @@
+{
+  "name": "angular2-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run lint && npm run copy-index && npm run tsc",
+    "tsc": "tsc -p src -w --outDir dist/app",
+    "start": "live-server --open=dist",
+    "lint": "tsconfig-lint src",
+    "copy-index": "cp src/index.html dist/index.html"
+  },
+  "dependencies": {
+    "angular2": "2.0.0-alpha.46",
+    "es6-shim": "^0.33.13",
+    "systemjs": "0.19.2"
+  },
+  "devDependencies": {
+    "live-server": "^0.8.2",
+    "tsconfig-lint": "^0.2.0",
+    "typescript": "^1.6.2"
+  }
+}
